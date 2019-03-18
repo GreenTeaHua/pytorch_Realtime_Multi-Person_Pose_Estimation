@@ -44,8 +44,8 @@ c
 - Download the mask of the unlabeled person at [Dropbox](https://www.dropbox.com/s/bd9ty7b4fqd5ebf/mask.tar.gz?dl=0)  
 次文件缺失部分mask文件，或其他原因，需要自己生成：  
 1. in d:/pose/ 
-    git clone https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation.git   
-2.in: D:\pose\Realtime_Multi-Person_Pose_Estimation\training\dataset\coco  
+    git clone https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation.git     
+2. in: D:\pose\Realtime_Multi-Person_Pose_Estimation\training\dataset\coco  
      git clone https://github.com/pdollar/coco.git
 3. in D:\pose\Realtime_Multi-Person_Pose_Estimation\training\dataset\coco\coco\MatlabAPI 
 需要自己编译，原版带的是linux。
