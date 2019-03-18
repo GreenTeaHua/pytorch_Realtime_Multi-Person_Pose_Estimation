@@ -47,17 +47,19 @@ c
     git clone https://github.com/ZheC/Realtime_Multi-Person_Pose_Estimation.git   
 2.in: D:\pose\Realtime_Multi-Person_Pose_Estimation\training\dataset\coco  
      git clone https://github.com/pdollar/coco.git
-3. in D:\pose\Realtime_Multi-Person_Pose_Estimation\training\dataset\coco\coco\MatlabAPI
+3. in D:\pose\Realtime_Multi-Person_Pose_Estimation\training\dataset\coco\coco\MatlabAPI 
+需要自己编译，原版带的是linux。
 mex('-largeArrayDims',...
      'private/gasonMex.cpp','../common/gason.cpp',...
      '-I../common/','-outdir','private');
 mex('-largeArrayDims',...
        'private/maskApiMex.c','../common/maskApi.c',...
-       '-I../common/','-outdir','private');
-4. in D:\pose\Realtime_Multi-Person_Pose_Estimation\training
-    getANNO.m
-5. in D:\pose\Realtime_Multi-Person_Pose_Estimation\training
-    genCOCOMASK.m
+       '-I../common/','-outdir','private');  
+4. in D:\pose\Realtime_Multi-Person_Pose_Estimation\training  
+    getANNO.m  
+5. in D:\pose\Realtime_Multi-Person_Pose_Estimation\training  
+    genCOCOMASK.m  
+    
     -------------------------
 - Download the official training format at [Dropbox](https://www.dropbox.com/s/0sj2q24hipiiq5t/COCO.json?dl=0)
 - `python train_VGG19.py --batch_size 100 --logdir {where to store tensorboardX logs}`
