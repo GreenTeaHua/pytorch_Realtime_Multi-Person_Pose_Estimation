@@ -55,10 +55,11 @@ mex('-largeArrayDims',...
 mex('-largeArrayDims',...
        'private/maskApiMex.c','../common/maskApi.c',...
        '-I../common/','-outdir','private');  
-4. in D:\pose\Realtime_Multi-Person_Pose_Estimation\training  
-    getANNO.m  
-5. in D:\pose\Realtime_Multi-Person_Pose_Estimation\training  
-    genCOCOMASK.m  
+4. matlab in D:\pose\Realtime_Multi-Person_Pose_Estimation\training  
+    getANNO.m  (to convert the annotation format from json to mat)  
+5. matlab in D:\pose\Realtime_Multi-Person_Pose_Estimation\training  
+    genCOCOMASK.m  (to obatin the mask images for unlabeled person. You can use 'parfor' in matlab to speed up the code.)  
+6. matlab Run genJSON('COCO') to generate a json file in dataset/COCO/json/ folder. The json files contain raw informations needed for training.
     
     -------------------------
 - Download the official training format at [Dropbox](https://www.dropbox.com/s/0sj2q24hipiiq5t/COCO.json?dl=0)
